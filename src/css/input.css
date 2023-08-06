@@ -4,7 +4,7 @@
 
 @layer base {
     @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
-
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
     body{
         @apply font-Manrope text-base;
     }
@@ -18,9 +18,26 @@
 }
 @layer components {
     .layout-container{
-        @apply max-w-[1170px] mx-auto px-4
+        @apply   lg:max-w-[1024px]  xl:max-w-[1170px] mx-auto px-4 
     }
     .card {
         @apply px-3 py-1.5 rounded-[5px] border border-white bg-black bg-opacity-40 inline-block text-white
+    }
+    .after-menu {
+        @apply after:absolute after:h-[2px] after:w-[0px] hover:after:w-[100%] after:bg-black after:-bottom-[2px] after:left-0 
+    }
+    .hover-transti {
+        @apply transition-all ease-in-out duration-500;
+    }
+    .menu-mobie {
+        visibility: hidden;
+        transform: translateX(120%);
+        opacity: 0;
+        transition: all ease-in-out 0.5s;
+    }
+    .menu-mobie.show {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
     }
 }
