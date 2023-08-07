@@ -624,7 +624,6 @@ input,
 .owl-carousel .owl-item img {
   width: auto;
 }
-
 .nav-link1.active {
   position: relative;
   --tw-text-opacity: 1;
@@ -641,7 +640,6 @@ input,
   --tw-bg-opacity: 1;
   background-color: rgb(248 90 71 / var(--tw-bg-opacity));
 }
-
 .fixed {
   position: fixed;
 }
