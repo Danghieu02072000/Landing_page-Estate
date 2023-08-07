@@ -621,6 +621,27 @@ input,
   visibility: visible;
 }
 
+.owl-carousel .owl-item img {
+  width: auto;
+}
+
+.nav-link1.active {
+  position: relative;
+  --tw-text-opacity: 1;
+  color: rgb(248 90 71 / var(--tw-text-opacity));
+}
+
+.nav-link1.active::after {
+  position: absolute;
+  bottom: -0.25rem;
+  left: 0px;
+  height: 2px;
+  width: 100%;
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 90 71 / var(--tw-bg-opacity));
+}
+
 .fixed {
   position: fixed;
 }
@@ -783,6 +804,10 @@ input,
   margin-top: 100px;
 }
 
+.mt-\[200px\] {
+  margin-top: 200px;
+}
+
 .block {
   display: block;
 }
@@ -869,6 +894,10 @@ input,
 
 .w-\[calc\(100\%\/3\)\] {
   width: calc(100% / 3);
+}
+
+.w-auto {
+  width: auto;
 }
 
 .w-full {
@@ -1095,6 +1124,14 @@ input,
   padding: 30px;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1143,6 +1180,11 @@ input,
 .py-\[60px\] {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .pb-\[50px\] {
@@ -1294,11 +1336,6 @@ input,
   color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
-.text-orangef8 {
-  --tw-text-opacity: 1;
-  color: rgb(248 90 71 / var(--tw-text-opacity));
-}
-
 .text-orangef9 {
   --tw-text-opacity: 1;
   color: rgb(255 153 0 / var(--tw-text-opacity));
@@ -1359,37 +1396,6 @@ input,
   color: rgb(148 163 184 / var(--tw-text-opacity));
 }
 
-.after\:absolute::after {
-  content: var(--tw-content);
-  position: absolute;
-}
-
-.after\:-bottom-1::after {
-  content: var(--tw-content);
-  bottom: -0.25rem;
-}
-
-.after\:left-0::after {
-  content: var(--tw-content);
-  left: 0px;
-}
-
-.after\:h-\[2px\]::after {
-  content: var(--tw-content);
-  height: 2px;
-}
-
-.after\:w-\[100\%\]::after {
-  content: var(--tw-content);
-  width: 100%;
-}
-
-.after\:bg-orangef8::after {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 90 71 / var(--tw-bg-opacity));
-}
-
 .hover\:scale-110:hover {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
@@ -1438,6 +1444,10 @@ input,
     margin-top: 0px;
   }
 
+  .sm\:mt-\[100px\] {
+    margin-top: 100px;
+  }
+
   .sm\:flex {
     display: flex;
   }
@@ -1470,6 +1480,14 @@ input,
     gap: 30px;
   }
 
+  .sm\:gap-5 {
+    gap: 1.25rem;
+  }
+
+  .sm\:p-10 {
+    padding: 2.5rem;
+  }
+
   .sm\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -1483,6 +1501,11 @@ input,
   .sm\:py-7 {
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
+  }
+
+  .sm\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .sm\:text-start {
@@ -1673,6 +1696,10 @@ input,
 
   .xl\:mb-\[200px\] {
     margin-bottom: 200px;
+  }
+
+  .xl\:mb-\[270px\] {
+    margin-bottom: 270px;
   }
 
   .xl\:max-h-\[550px\] {

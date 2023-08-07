@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../hi/owl.carousel.min.css">
+    <link rel="stylesheet" href="../hi/owl.theme.default.min.css">
     <link rel="stylesheet" href="../dist/output.css">
 </head>
 <body>
@@ -23,13 +27,13 @@
                     </ul>
                     <button class="mr-2 block md:hidden" id="menu-click"><i class="bi bi-list text-3xl "></i></button>
                 </div>
-                <div class="relative mb-20 lg:mb-[140px] xl:mb-[200px]">
+                <div class="relative mb-20 lg:mb-[140px] xl:mb-[270px]">
                     <div class=" relative z-10 text-center sm:text-start">
-                        <h3 class="font-DM-san font-bold text-xl sm:text-2xl uppercase text-orangef9 mb-6 ">RESIDENTIAL & OFFICE SPACES</h3>
+                        <h3 class="font-DM-san font-bold text-xl sm:text-2xl uppercase text-orangef9 mb-6 sm:text-start">RESIDENTIAL & OFFICE SPACES</h3>
                         <h2 class=" font-semibold text-4xl sm:text-[44px] leading-[38px] max-w-full sm:max-w-[90%] md:max-w-[400px] mb-6 sm:leading-[55px] lg:leading-[65px] lg:max-w-[500px] lg:text-[54px]">Smart Living Style for Smart People</h2>
                         <p class="text-[17px] text-gray font-normal max-w-full sm:max-w-[90%] md:max-w-[400px] mb-[48px] lg:max-w-[500px]">Much did had call new drew that kept. Limits expect wonder law she. Now has you views woman noisy match money rooms.</p>
                         <form action="" class="flex flex-col max-w-[618px]  border border-slate-300 lg:max-w-[737px] sm:flex-row">
-                            <div class="flex gap-5 px-8 bg-white items-center flex-1 shadow-xl" >
+                            <div class="flex gap-3 sm:gap-5 px-8 bg-white items-center flex-1 shadow-xl" >
                                 <img src="./img/Icon.jpg" alt="" class="w-5 h-5">
                                 <input type="text" class="border-none flex-1 text-[17px] py-4 sm:py-0 placeholder:text-slate-300 placeholder:font-DM-san placeholder:text-lg " placeholder="Enter Zipcode to search properties">
                             </div>
@@ -71,7 +75,7 @@
             </div>
             <div class="hidden fixed w-[100vw] h-[100vh] bg-black right-0 top-0 z-40 bg-opacity-80 md:hidden" id="overlay"></div>
         </header>
-        <main class=" mt-[100px] lg:mt-[223px]">
+        <main class=" mt-[200px] sm:mt-[100px] lg:mt-[223px]">
             <section class="mb-[102px]">
                 <div class="layout-container text-center">
                     <h2 class="font-semibold text-4xl  sm:text-[4rem] sm:leading-[10.5rem] mb-[70px]">How it works?</h2>
@@ -108,44 +112,111 @@
                         <div class=""> <h2 class="font-semibold text-4xl mb-[15px] leading-10">Best Real Estate Deals</h2>
                             <p class="font-medium text-base leading-6 max-w-[470px]">Colonel gravity get thought fat smiling add but. Wonder twenty hunted and put income set desire expect.</p>
                         </div>
-                        <a href="#" class="py-5 px-8 rounded-md bg-orangef8 text-white font-medium hover:bg-opacity-90 hover-transti shadow-xl">View All Property</a>
+                        <a href="#" class="py-4 px-8 rounded-md bg-orangef8 text-white font-medium hover:bg-opacity-90 hover-transti shadow-xl">View All Property</a>
                     </div>
                     <div class="">
-                        <div class="flex flex-wrap gap-5 sm:gap-[30px] items-center mb-[45px] lg:gap-[50px]">
-                            <span class="font-semibold text-base lg:text-[18px] text-orangef8 relative after:absolute after:h-[2px] after:w-[100%] after:bg-orangef8 after:-bottom-1 after:left-0  " >Residential Property</span>
-                            <span class="font-semibold text-base lg:text-[18px] ">Commercial Property</span>
-                            <span class="font-semibold text-base lg:text-[18px]">Agriculture Property</span>
-                            <span class="font-semibold text-base lg:text-[18px]">Industrial Property</span>
-                        </div>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[30px]">
-                            <div class=" relative mx-auto">
-                                <img src="./img/Image 03.jpg" alt="">
-                                <div class="card absolute top-2 left-2 hover:bg-opacity-80">Featured</div>
-                                <div class="card absolute top-2 left-[104px] hover:bg-opacity-80">3D</div>
+                        <ul class=" flex flex-wrap gap-5 sm:gap-[30px] items-center mb-[45px] lg:gap-[50px]" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link1 active font-semibold text-base lg:text-[18px] " id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Residential Property</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link1 font-semibold text-base lg:text-[18px] " id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Commercial Property</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link1 font-semibold text-base lg:text-[18px]" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Agriculture Property</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link1 font-semibold text-base lg:text-[18px]" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" >Industrial Property</button>
+                            </li>
+                          </ul>
+                          <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[30px]">
+                                    <div class=" relative mx-auto">
+                                        <img src="./img/Image 03.jpg" alt="">
+                                        <div class="card absolute top-2 left-2 hover:bg-opacity-80">Featured</div>
+                                        <div class="card absolute top-2 left-[104px] hover:bg-opacity-80">3D</div>
+                                    </div>
+                                    <div class=" relative  mx-auto">
+                                        <img src="./img/Image 02.jpg" alt="">
+                                        <div class="card absolute top-2 left-2 hover:bg-opacity-80">Featured</div>
+                                        <div class="card absolute top-2 left-[104px] hover:bg-opacity-80">3D</div>
+                                    </div>
+                                    <div class=" relative  mx-auto">
+                                        <img src="./img/Image 01.jpg" alt="">
+                                        <div class="card absolute top-1 left-2 hover:bg-opacity-80">Featured</div>
+                                        <div class="card absolute top-1 left-[104px] hover:bg-opacity-80">3D</div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class=" relative  mx-auto">
-                                <img src="./img/Image 02.jpg" alt="">
-                                <div class="card absolute top-2 left-2 hover:bg-opacity-80">Featured</div>
-                                <div class="card absolute top-2 left-[104px] hover:bg-opacity-80">3D</div>
+                            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[30px]">
+                                    <div class=" relative mx-auto">
+                                        <img src="./img/Image 01.jpg" alt="">
+                                        <div class="card absolute top-2 left-2 hover:bg-opacity-80">Featured</div>
+                                        <div class="card absolute top-2 left-[104px] hover:bg-opacity-80">3D</div>
+                                    </div>
+                                    <div class=" relative  mx-auto">
+                                        <img src="./img/Image 02.jpg" alt="">
+                                        <div class="card absolute top-2 left-2 hover:bg-opacity-80">Featured</div>
+                                        <div class="card absolute top-2 left-[104px] hover:bg-opacity-80">3D</div>
+                                    </div>
+                                    <div class=" relative  mx-auto">
+                                        <img src="./img/Image 03.jpg" alt="">
+                                        <div class="card absolute top-1 left-2 hover:bg-opacity-80">Featured</div>
+                                        <div class="card absolute top-1 left-[104px] hover:bg-opacity-80">3D</div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class=" relative  mx-auto">
-                                <img src="./img/Image 01.jpg" alt="">
-                                <div class="card absolute top-1 left-2 hover:bg-opacity-80">Featured</div>
-                                <div class="card absolute top-1 left-[104px] hover:bg-opacity-80">3D</div>
+                            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[30px]">
+                                    <div class=" relative mx-auto">
+                                        <img src="./img/Image 02.jpg" alt="">
+                                        <div class="card absolute top-2 left-2 hover:bg-opacity-80">Featured</div>
+                                        <div class="card absolute top-2 left-[104px] hover:bg-opacity-80">3D</div>
+                                    </div>
+                                    <div class=" relative  mx-auto">
+                                        <img src="./img/Image 01.jpg" alt="">
+                                        <div class="card absolute top-2 left-2 hover:bg-opacity-80">Featured</div>
+                                        <div class="card absolute top-2 left-[104px] hover:bg-opacity-80">3D</div>
+                                    </div>
+                                    <div class=" relative  mx-auto">
+                                        <img src="./img/Image 03.jpg" alt="">
+                                        <div class="card absolute top-1 left-2 hover:bg-opacity-80">Featured</div>
+                                        <div class="card absolute top-1 left-[104px] hover:bg-opacity-80">3D</div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                            <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[30px]">
+                                <div class=" relative mx-auto">
+                                    <img src="./img/Image 01.jpg" alt="">
+                                    <div class="card absolute top-2 left-2 hover:bg-opacity-80">Featured</div>
+                                    <div class="card absolute top-2 left-[104px] hover:bg-opacity-80">3D</div>
+                                </div>
+                                <div class=" relative  mx-auto">
+                                    <img src="./img/Image 03.jpg" alt="">
+                                    <div class="card absolute top-2 left-2 hover:bg-opacity-80">Featured</div>
+                                    <div class="card absolute top-2 left-[104px] hover:bg-opacity-80">3D</div>
+                                </div>
+                                <div class=" relative  mx-auto">
+                                    <img src="./img/Image 02.jpg" alt="">
+                                    <div class="card absolute top-1 left-2 hover:bg-opacity-80">Featured</div>
+                                    <div class="card absolute top-1 left-[104px] hover:bg-opacity-80">3D</div>
+                                </div>
+                            </div></div>
+                          </div>
                     </div>
                 </div>
             </section>
             <section class="text-center mb-[80px] lg:mb-[196px]">
                 <div class="layout-container ">
                     <h2 class="font-semibold text-4xl leading-10 mb-[95px]">Featured Listing of the Week</h2>
-                    <div class="bg-[#F1FFFF] w-full p-10 flex flex-col justify-between gap-[77px] lg:flex-row">
+                    <div class="bg-[#F1FFFF] w-full p-5 sm:p-10 flex flex-col justify-between gap-[77px] lg:flex-row">
                         <div class="relative">
                             <img src="./img/Mask Group.png" alt="" class="mx-auto lg:m-auto">
                             <img src="./img/Image.png" alt="" class="absolute -bottom-[25%] left-[50%] -translate-x-[50%] lg:bottom-0">
                         </div>
-                        <div class="flex-1 py-10  pr-2 xl:pr-[100px] text-center lg:text-start max-w-[95%] sm:max-w-[70%] mx-auto">
+                        <div class="flex-1 sm:py-10  pr-2 xl:pr-[100px] text-center lg:text-start max-w-[95%] sm:max-w-[70%] mx-auto">
                             <h3 class="text-[31px] font-semibold leading-10 mb-8">The and collecting for the motionless difficulty son.</h3>
                             <p class="text-base text-gray2 leading-6 mb-10">Conveying or northward offending admitting perfectly my. Colonel gravity get thought fat smiling add but difficult situations.</p>
                             <div class="flex flex-row flex-wrap gap-y-[37px] mb-[54px]">
@@ -183,7 +254,40 @@
             <section class=" mb-[80px] lg:mb-[210px] ">
                 <div class="layout-container">
                     <h2 class="max-w-[570px] font-semibold text-4xl pb-[50px]">Loved by businesses, and individuals across the </h2>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 max-w-full lg:grid-cols-3 gap-[30px] mb-[85px] overscroll-auto">
+                    <div class="owl-carousel owl-theme mb-[85px] max-w-full">
+                        <div class="flex items-start flex-col py-[50px] px-10 border border-[#EBEBEB] rounded-[10px] shadow-xl">
+                            <img src="./img/Review.png"  alt="" class="mb-8 h-[16px] w-auto ">
+                            <p class="text-base leading-7 font-normal text-gray1 mb-[50px]">Moderate children at of outweigh it. Unsatiable it considered invitation he travelling insensible. Consulted admitting oh mr up as described.</p>
+                            <div class="flex gap-5">
+                                <img src="./img/pb_1.png" alt="" class="rounded-full w-12 h-12" >
+                                <div class="flex flex-col gap-1">
+                                    <span class="font-bold text-gray3">Jane Cooper</span>
+                                    <span class="font-normal text-gray1 text-sm">Los Angeles, CA</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-start flex-col py-[50px] px-10 border border-[#EBEBEB] rounded-[10px] shadow-xl">
+                            <img src="./img/Review.png" alt="" class="mb-8 h-[16px] ">
+                            <p class="text-base leading-7 font-normal text-gray1 mb-[50px]">Moderate children at of outweigh it. Unsatiable it considered invitation he travelling insensible. Consulted admitting oh mr up as described.</p>
+                            <div class="flex gap-5">
+                                <img src="./img/pb_2.png" alt="" class="rounded-full w-12 h-12" >
+                                <div class="flex flex-col gap-1">
+                                    <span class="font-bold text-gray3">Robert Fox</span>
+                                    <span class="font-normal text-gray1 text-sm">New York City, NY</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-start flex-col py-[50px] px-10 border border-[#EBEBEB] rounded-[10px] shadow-xl">
+                            <img src="./img/Review.png" alt="" class="mb-8 h-[16px] ">
+                            <p class="text-base leading-7 font-normal text-gray1 mb-[50px]">Moderate children at of outweigh it. Unsatiable it considered invitation he travelling insensible. Consulted admitting oh mr up as described.</p>
+                            <div class="flex gap-5">
+                                <img src="./img/pb_1.png" alt="" class="rounded-full w-12 h-12" >
+                                <div class="flex flex-col gap-1">
+                                    <span class="font-bold text-gray3">Jane Cooper</span>
+                                    <span class="font-normal text-gray1 text-sm">Los Angeles, CA</span>
+                                </div>
+                            </div>
+                        </div>
                         <div class="flex items-start flex-col py-[50px] px-10 border border-[#EBEBEB] rounded-[10px] shadow-xl">
                             <img src="./img/Review.png" alt="" class="mb-8 h-[16px] ">
                             <p class="text-base leading-7 font-normal text-gray1 mb-[50px]">Moderate children at of outweigh it. Unsatiable it considered invitation he travelling insensible. Consulted admitting oh mr up as described.</p>
@@ -210,14 +314,17 @@
                             <img src="./img/Review.png" alt="" class="mb-8 h-[16px] ">
                             <p class="text-base leading-7 font-normal text-gray1 mb-[50px]">Moderate children at of outweigh it. Unsatiable it considered invitation he travelling insensible. Consulted admitting oh mr up as described.</p>
                             <div class="flex gap-5">
-                                <img src="./img/pb_3.png" alt="" class="rounded-full w-12 h-12" >
+                                <img src="./img/pb_1.png" alt="" class="rounded-full w-12 h-12" >
                                 <div class="flex flex-col gap-1">
-                                    <span class="font-bold text-gray3">Leslie Alexander</span>
-                                    <span class="font-normal text-gray1 text-sm">Buffalo, NJ</span>
+                                    <span class="font-bold text-gray3">Jane Cooper</span>
+                                    <span class="font-normal text-gray1 text-sm">Los Angeles, CA</span>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- <div class="grid grid-cols-1 sm:grid-cols-2 max-w-full lg:grid-cols-3 gap-[30px] mb-[85px] overscroll-auto">
+
+                    </div> -->
                     <div class="flex md:justify-between items-center flex-col lg:flex-row gap-5 lg:gap-0">
                         <div class="flex gap-[30px] h-[20px] items-center xl:gap-[80px] flex-wrap">
                             <img src="./img/img_1.png" alt="" class="max-h-full hover:scale-110 hover-transti">
@@ -266,5 +373,9 @@
         </main>
     </div>
 </body>
+
+<script src="../hi/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="../hi/owl.carousel.min.js"></script>
 <script src="./js/main.js"></script>
 </html>
