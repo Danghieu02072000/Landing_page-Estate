@@ -43,5 +43,7 @@
     .owl-carousel .owl-item img {
         width: auto;
     }
-
+    .nav-link1.active {
+        @apply text-orangef8 relative after:absolute after:h-[2px] after:w-[100%] after:bg-orangef8 after:-bottom-1 after:left-0  
+    }
 }
