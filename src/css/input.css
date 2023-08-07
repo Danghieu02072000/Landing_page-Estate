@@ -40,4 +40,8 @@
         opacity: 1;
         visibility: visible;
     }
+    .owl-carousel .owl-item img {
+        width: auto;
+    }
+
 }
