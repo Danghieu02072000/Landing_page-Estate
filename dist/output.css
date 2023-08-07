@@ -855,10 +855,6 @@ input,
   width: 35%;
 }
 
-.w-\[70vw\] {
-  width: 70vw;
-}
-
 .w-\[75\%\] {
   width: 75%;
 }
@@ -867,20 +863,16 @@ input,
   width: 90px;
 }
 
+.w-\[90vw\] {
+  width: 90vw;
+}
+
 .w-\[calc\(100\%\/3\)\] {
   width: calc(100% / 3);
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-\[90\] {
-  width: 90;
-}
-
-.w-\[90vw\] {
-  width: 90vw;
 }
 
 .max-w-\[1440px\] {
